@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rotate {
+    animation: spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  background-image: url("https://picsum.photos/id/811/2000/1000");
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.AuthPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("https://picsum.photos/id/811/2000/1000");
+}
+
+.create-task-bubble {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: blueviolet;
+  color: #ddd;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+}
+
+.translucent {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(30px);
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.h-fit-content {
+  height: fit-content !important;
+}
+
+.task-detail-container{
+  top: 1rem;
+  position: sticky;
+}
+
+
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #282c34;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #777;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #282c34;  /* creates padding around scroll thumb */
+}
